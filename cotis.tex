@@ -1,0 +1,177 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[10pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+\usepackage{gensymb}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{multicol} % Agregar 2 o mÃ¡s columnas
+\usepackage{titlesec} % Cambio local de tamaÃ±o de letra
+\usepackage{ragged2e}
+\usepackage[table]{xcolor}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{enumerate}
+\usepackage{here}
+\setlength{\columnsep}{0.5cm} % Separacion de las columnas
+\setmarginsrb{3 cm}{0.5 cm}{3 cm}{2.5 cm}{0 cm}{1.5 cm}{1 cm}{0 cm}
+\pagestyle{fancy}
+\fancyhf{}
+\usepackage{mwe}
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\begin{tabular}{lll}
+\raisebox{-.5\height}{\includegraphics[scale=0.1]{logo.png}} & \color{white}---------------------------------------------------------- & \textbf{\LARGE COTIZACIÃ“N} \\
+\end{tabular}
+%----------------------------------------------------------------------------------------
+%	DATOS CLIENTE
+%----------------------------------------------------------------------------------------
+\begin{tabular}{l}
+\color{white}----------------------- \\
+\end{tabular}
+
+\begin{tabular}{lll}
+\textbf{NOMBRE:} \%NAME\%  & \color{white}---------------------------------- & \textbf{VALOR UF: }\%UF\% \\
+\textbf{DIRECCIÃ“N:} \%DIR\%  & \color{white}---------------------------------- &  \textbf{FECHA: }\%UF\% \\
+\textbf{TELÃ‰FONO:} \%TEL\% & \color{white}-------- &  \\
+\end{tabular}
+
+%----------------------SEPARADOR ---------------------------------------
+\begin{tabular}{l}
+\color{white}----------------------- \\
+\end{tabular}
+%----------------------SEPARADOR ---------------------------------------
+
+%----------------------------------------------------------------------------------------
+% TABLA DATOS 1
+%----------------------------------------------------------------------------------------
+\begin{tabular}{|l|l|l|}
+\hline
+
+\textbf{TIPO DE PRODUCTO} & \textbf{SECTOR} & \textbf{CAPACIDAD} \\ \hline
+\hline
+%TABLA INTERNA TIPO DE PRODUCTO
+\begin{tabular}{|c|c|c|c|}
+\hline
+\hline
+STANDAR & PLAN 10 & PLAN 20 & PERPETUO\\
+\hline
+ &  &  & \\
+\hline
+\hline
+\hline
+\end{tabular}
+%END TABLA INTERNA TIPO DE PRODUCTO
+& 
+\begin{center}
+    \textbf{203}
+\end{center}
+&  
+%TABLA INTERNA CAPACIDAD
+\begin{tabular}{|c|c|c|}
+\hline
+\hline
+1 & 2 PARA 4 & 3 PARA 6 \\
+\hline
+ & & \\
+\hline
+\hline
+\hline
+\end{tabular}
+%END TABLA INTERNA TIPO DE PRODUCTO
+
+\\ 
+\hline
+\end{tabular}
+
+%----------------------SEPARADOR ---------------------------------------
+\begin{tabular}{l}
+\color{white}----------------------- \\
+\end{tabular}
+%----------------------SEPARADOR ---------------------------------------
+
+%----------------------------------------------------------------------------------------
+% TABLA DATOS 2
+%----------------------------------------------------------------------------------------
+\begin{tabular}{llll}
+\hline
+\color{white}---------------------- & \color{white}--------------------- & \color{white}---------------------- \\
+VALOR NECESIDAD INMEDIATA &  & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+\color{white}---------------------- & \color{white}--------------------- & \color{white}---------------------- \\
+\textbf{DESCUENTO COMPRA ANTICIPADA} & & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+\color{white}---------------------- & \color{white}--------------------- & \color{white}---------------------- \\
+VALOR COMPRA ANTICIPADA &  & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+\color{white}---------------------- & \color{white}--------------------- & \color{white}---------------------- \\
+\% DESCUENTO PAGO CONTADO &  & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+\color{white}---------------------- & \color{white}--------------------- & \color{white}---------------------- \\
+\% DESCUENTO (OTRO ESPECIFICAR) &  & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+\color{white}---------------------- & \color{white}--------------------- & \color{white}---------------------- \\
+\color{white}---------------------- & \color{white}--------------------- & \color{white}---------------------- \\
+\color{white}---------------------- & \color{white}--------------------- & \color{white}---------------------- \\
+\color{white}---------------------- & \color{white}--------------------- & \color{white}---------------------- \\
+TOTAL &  & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+\textbf{PIE EFECTIVO / CHEQUE} &  & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+SALDO &  & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+\color{white}---------------------- & \color{white}--------------------- & \color{white}---------------------- \\
+\hline
+\end{tabular}
+
+%----------------------SEPARADOR ---------------------------------------
+\begin{tabular}{l}
+\color{white}----------------------- \\
+\end{tabular}
+%----------------------SEPARADOR ---------------------------------------
+
+%----------------------------------------------------------------------------------------
+% TABLA DATOS 3
+%----------------------------------------------------------------------------------------
+\begin{tabular}{llll}
+\hline
+\color{white}----------------- & \color{white}- & \color{white}-----  & \color{white}----------------- \\
+PERIODO DE RESTRICCIÃ“N & & &\\ 
+DE USO TRADICIONAL  & & \%MESES\% MESES UF \%UF\% POR DIA \\
+\color{white}---------------------- & & & \color{white}---------------------- \\
+MANTENCIÃ“N ANUAL &  & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+\color{white}---------------------- & & & \color{white}---------------------- \\
+MANTENCIÃ“N PERPETUA &  & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+\color{white}---------------------- & & & \color{white}---------------------- \\
+ARANCEL DE SEPULTACIÃ“N &  & \textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\
+\color{white}---------------------- & & & \color{white}---------------------- \\
+\hline
+\end{tabular}
+
+%----------------------SEPARADOR ---------------------------------------
+\begin{tabular}{l}
+\color{white}----------------------- \\
+\end{tabular}
+%----------------------SEPARADOR ---------------------------------------
+
+%----------------------------------------------------------------------------------------
+% TABLA DATOS 4
+%----------------------------------------------------------------------------------------
+\begin{tabular}{lllll}
+\hline
+\color{white}----------------------& \color{white}----- & \color{white}----------------------------- & \color{white}-----  & \color{white}------------------ \\
+\textbf{\Large RESUMEN} & & & &\\ 
+\color{white}----------------------& \color{white}----- & \color{white}----------------------------- & \color{white}-----  & \color{white}------------------ \\
+ & \textbf{NÂ° CUOTAS:} \%N\% & &\textbf{UF: } \%uf\% & \textbf{\$: } \%pesos\% \\ 
+ & & & &\color{white}---------------------- \\
+
+\hline
+\end{tabular}
+\end{document}
